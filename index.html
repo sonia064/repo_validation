@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img src="images/BAIUST Logo.png" height="115px" width="110px" alt="" />
+        </div>
+        
+        <div class="image"></div>
+        <div class="text">
+          <span class="zigzag-text">Transport Card Validation System</span>
+        </div>
+       
+        
+      </div>
+
+
+
+
+      <form id="form">
+        <div class="social">
+          <div class="title">Get Started</div>
+        </div>
+
+        <!-- /** 
+          * ! user name Input here
+         **/ -->
+
+        <div>
+          <label for="username">Transport User Name</label>
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter Your Name"
+            autocomplete="off"
+          />
+          
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+
+         <!-- /** 
+          * ! student id Input here
+         **/ -->
+
+         <div>
+          <label for="username">Enter your id</label>
+          <i class="fas fa-user"></i>
+          <input
+            type="number"
+            name="idd"
+            id="idd"
+            placeholder="Enter your id"
+            autocomplete="off"
+
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+
+
+
+        <!-- /** 
+          * ! Email Input here
+         **/ 
+
+        <div>
+          <label for="email">Email</label>
+          <i class="far fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abc@gmail.com"
+            autocomplete="off"
+
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+                    -->
+        <!-- /** 
+          * ! SN Input here
+         **/ -->
+
+        <div>
+          <label for="password">Serial No</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="number"
+            name="SN"
+            id="SN"
+            placeholder="Enter your SN"
+            autocomplete="off"
+
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+
+          <!-- /** 
+          * ! Card validation
+         **/ -->
+
+        <div>
+          <label for="username">Card Validate Session</label>
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="validate"
+            id="validate"
+            placeholder="Enter Session"
+            autocomplete="off"
+
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <button type="submit" id="submit" >Validation</button>
+      </form>
+
+      
+    </div>
+
+
+    <div id="notification" class="notification hidden">
+      <span class="notification-icon"></span>
+      <span id="notificationMessage" class="notification-message"></span>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
